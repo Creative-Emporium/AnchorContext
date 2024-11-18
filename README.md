@@ -41,8 +41,7 @@ The code is tested on `Python 3.10.0`, `PyTorch 2.5.0.dev20240912+cu121` / `2.6.
 
 ```bash
 conda create -n anchorcontext python=3.10 -y && conda activate anchorcontext
-pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
-pip3 install torch==2.6.0.dev20241112+cu121 --index-url https://download.pytorch.org/whl/nightly/cu121
+pip install torch==2.6.0.dev20241112+cu121 --index-url https://download.pytorch.org/whl/nightly/cu121
 pip install packaging &&  pip install ninja && pip install flash-attn==2.5.6 --no-build-isolation --no-cache-dir
 pip install yunchang==0.2   # directly ```pip install yunchang``` if you are using flash_attn >= 2.6.0
 pip install -r requirements.txt

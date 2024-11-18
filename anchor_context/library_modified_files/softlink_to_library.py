@@ -23,8 +23,11 @@ def backup_target_file(target_file_path):
     elif os.path.exists(target_file_path):
         # It's a regular file
         backup_path = target_file_path + '.bak'
-        print(f"Backing up {target_file_path} to {backup_path}")
-        os.rename(target_file_path, backup_path)
+        if os.path.exists(backup_path):
+            print(f"Backup file {backup_path} already exists, skipping backup.")
+        else:
+            print(f"Backing up {target_file_path} to {backup_path}")
+            os.rename(target_file_path, backup_path)
     else:
         # Does not exist
         pass  # Do nothing
@@ -63,8 +66,8 @@ for file_pair in env_changed_files:
 
     # Check if source file exists
     if not os.path.exists(source_file):
-        print(f"Source file {source_file} does not exist. Skipping...")
-        continue
+        print(f"Source file {source_file} does not exist!")
+        exit(1)
 
     # Check if target file exists or is a symlink
     if os.path.lexists(target_file):
@@ -72,8 +75,12 @@ for file_pair in env_changed_files:
             # Check if symlink is valid or broken
             if os.path.exists(target_file):
                 print(f"Target file {target_file} is a valid symlink.")
+                print(f"Unlinking the symlink {target_file}")
+                os.unlink(target_file)
             else:
                 print(f"Target file {target_file} is a broken symlink.")
+                print(f"Removing the broken symlink {target_file}")
+                os.unlink(target_file)
         else:
             # Regular file
             print(f"Target file {target_file} exists.")

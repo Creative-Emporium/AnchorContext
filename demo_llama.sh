@@ -3,7 +3,7 @@ export PYTORCH_CUDA_ALLOC_CONF='max_split_size_mb:1024'
 # export DEBUGPY=1
 # export DYNAMO_CACHE_SIZE_LIMIT=1024
 
-# (Example 1):
+# (Example 1): For compatibility with FlexAttention, seq-length must be a power of 2, such as 4096, 65536.
 accelerate launch \
 --config_file  accelerate_configs/single_node_4gpu.yaml \
 train.py \
@@ -22,7 +22,7 @@ train.py \
 --model_max_position_embeddings 4096 \
 --rope_scaling_type default \
 --rope_scaling_factor 16 \
---seq-length 65536 \
+--seq-length 65536 \ 
 --rope-theta 100000 \
 --parallel_mode ulysses_attn
 

@@ -1,4 +1,9 @@
-# ⚠️ RoPE is Broken because of ... BFloat16 — Then, How Can We Improve Long-Context Training?  [📄 *arXiv*](https://arxiv.org/abs/)
+# When Precision Meets Position: ⚠️BFloat16 Breaks Down RoPE in Long-Context Training  [📄 *arXiv*](https://arxiv.org/abs/)
+
+> **RoPE is Broken because of ... BFloat16 — Then, How Can We Improve Long-Context Training?**\
+> **👉 We propose AnchorAttention, improved attention for LLMs long-context training.**
+
+-----
 
 <p align="center">
     <img src="./assets/anchorcontext_logo.png" width="800" />
@@ -6,8 +11,6 @@
 
 
 ## What is this?
-
-> **AnchorAttention: Improved attention for LLMs long-context training.**
 
 
 This repository provides the implementation of **`AnchorAttention`**, a plug-and-play attention mechanism designed to significantly improve the long-context training of Large Language Models (LLMs). AnchorAttention addresses numerical issues that arise when using Rotary Positional Embedding (RoPE) with BFloat16 precision, particularly in long-context scenarios.

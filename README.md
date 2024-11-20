@@ -166,7 +166,7 @@ def setup_debugpy(accelerator, endpoint="localhost", port=5678, rank=0, force=Fa
 
 If you need support for models beyond the currently supported **LLaMA**, **Mistral**, and **Qwen** series, please reach out to me directly. Haonan Wang [haonan.wang@u.nus.edu](mailto:haonan.wang@u.nus.edu), WeChat (whn769452159).
 
-*I am happy to provide infrastructure support for additional company-level models.*
+*I am happy to provide infrastructure support for more models!*
 
 
 ## 💡 Some Random Thoughts

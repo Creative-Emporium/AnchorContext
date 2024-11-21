@@ -1,4 +1,4 @@
-# When Precision Meets Position: ⚠️BFloat16 Breaks Down RoPE in Long-Context Training  &nbsp;   [📄 *arXiv*](https://arxiv.org/abs/)
+# When Precision Meets Position: ⚠️BFloat16 Breaks Down RoPE in Long-Context Training  &nbsp;   [📄 *arXiv*](https://arxiv.org/abs/2411.13476)
 
 > **RoPE is Broken because of ... BFloat16 — Then, How Can We Improve Long-Context Training?**\
 > **👉 We propose AnchorAttention, the improved attention for LLMs long-context training.**
@@ -197,9 +197,18 @@ This work is built on top of the following papers/repositories:
 If you find this work useful, please consider citing it:
 
 ```
+@misc{wang2024precisionmeetspositionbfloat16,
+      title={When Precision Meets Position: BFloat16 Breaks Down RoPE in Long-Context Training}, 
+      author={Haonan Wang and Qian Liu and Chao Du and Tongyao Zhu and Cunxiao Du and Kenji Kawaguchi and Tianyu Pang},
+      year={2024},
+      eprint={2411.13476},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.13476}, 
+}
 ```
 
-😜 And don’t forget to give it a ⭐ if you like it!
+😝 And don’t forget to give it a ⭐ if you like it!
 
 [![📈 Star History Chart](https://api.star-history.com/svg?repos=haonan3/AnchorContext&type=Date)](https://star-history.com/#haonan3/AnchorContext&Date)
 

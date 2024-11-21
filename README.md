@@ -1,6 +1,6 @@
 # When Precision Meets Position: ⚠️BFloat16 Breaks Down RoPE in Long-Context Training  &nbsp;   [📄 *arXiv*](https://arxiv.org/abs/2411.13476)
 
->**RoPE is Broken because of ... BFloat16 — Then, How Can We Improve Long-Context Training?** \
+>**RoPE is Broken 🤯 because of ... BFloat16 — Then, How Can We Improve Long-Context Training? 🤔️** \
 >**👉 We propose AnchorAttention, the improved attention for LLMs long-context training.**
 
 -----

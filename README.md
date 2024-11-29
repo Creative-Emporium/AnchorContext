@@ -191,6 +191,8 @@ This work is built on top of the following papers/repositories:
 - [Ring-Flash-Attention](https://github.com/zhuzilin/ring-flash-attention)
 - Ring-Attention ([Shenggui et al.](https://aclanthology.org/2023.acl-long.134/); [Liu et al.](https://arxiv.org/abs/2310.01889))
 
+Thanks to [**@jingwangsg**](https://github.com/jingwangsg) for helping develop the **Debugging Function**!
+
 
 ## 📜 Citation
 

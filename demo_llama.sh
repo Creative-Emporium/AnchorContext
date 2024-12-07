@@ -49,3 +49,31 @@ train.py \
 # --seq-length 65536 \
 # --rope-theta 100000 \
 # --parallel_mode ulysses_attn
+
+
+# # (Example 3): Use two nodes with 16 GPUs in total. You need to run the following commends separately on two nodes.
+# accelerate launch \
+# --config_file  accelerate_configs/two_node.yaml \
+# --machine_rank $RANK \
+# --main_process_ip $MASTER_ADDR \
+# --main_process_port $MASTER_PORT \
+# train_sailor2_anchorattention.py \
+# train.py \
+# --wandb AnchorContext \
+# --output-dir ./output/test \
+# --batch-size 1 \
+# --gradient-accumulate-every 8 \
+# --max-train-steps 4000  \
+# --saving_interval 500 \
+# --min_steps_for_save 3000 \
+# --save_per_hours 3 \
+# --dataset ./data/raw_data/slimpajama_packed_256001_5b_small.jsonl \
+# --data-format tokenized \
+# --attn_engine 'flash' \
+# --model_name_or_path meta-llama/Llama-2-7b-hf \
+# --model_max_position_embeddings 4096 \
+# --rope_scaling_type default \
+# --rope_scaling_factor 16 \
+# --seq-length 65536 \ 
+# --rope-theta 100000 \
+# --parallel_mode ulysses_attn

@@ -153,9 +153,9 @@ def setup_debugpy(accelerator, endpoint="localhost", port=5678, rank=0, force=Fa
 
 ## TODOs
 
-- [ ] **Test Multiple Nodes**
-  - Test distributed training across multiple nodes to enhance scalability.
-  
+- [x] **Test Multiple Nodes**  
+  Distributed training has now been tested across multiple nodes. For an implementation reference, please see **Example 3** in the `demo_llama.sh` script, which demonstrates how to run training across multiple nodes.
+
 - [ ] **Enable and Test Larger Batch Sizes**
   - Enable and then test batch sizes greater than 1 to improve training efficiency.
 

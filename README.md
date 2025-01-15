@@ -199,14 +199,11 @@ Thanks to [**@jingwangsg**](https://github.com/jingwangsg) for helping develop t
 If you find this work useful, please consider citing it:
 
 ```
-@misc{wang2024precisionmeetspositionbfloat16,
-      title={When Precision Meets Position: BFloat16 Breaks Down RoPE in Long-Context Training}, 
-      author={Haonan Wang and Qian Liu and Chao Du and Tongyao Zhu and Cunxiao Du and Kenji Kawaguchi and Tianyu Pang},
-      year={2024},
-      eprint={2411.13476},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.13476}, 
+@article{wang2024precision,
+  title={When Precision Meets Position: BFloat16 Breaks Down RoPE in Long-Context Training},
+  author={Wang, Haonan and Liu, Qian and Du, Chao and Zhu, Tongyao and Du, Cunxiao and Kawaguchi, Kenji and Pang, Tianyu},
+  journal={arXiv preprint arXiv:2411.13476},
+  year={2024}
 }
 ```
 
